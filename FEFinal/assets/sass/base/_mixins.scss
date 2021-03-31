@@ -1,0 +1,14 @@
+@import "../base/variables";
+
+@mixin navItem() {
+    color: #eee !important;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0 0 0 35px;
+    line-height: 1.41 !important;
+    transition: .2s;
+
+    &:hover {
+        color: $color-secondary !important;
+    }
+}

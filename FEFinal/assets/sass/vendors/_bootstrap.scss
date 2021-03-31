@@ -1,0 +1,16 @@
+$primary: white;
+$secondary: #FF931E;
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import '../base/mixins';
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            @include navItem();
+        }
+    }
+}
