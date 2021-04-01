@@ -1,3 +1,73 @@
+@import "../base/variables";
+.hidden-scroll{
+    overflow: hidden;
+}
+header{
+    transition: .2s linear;
+}
+.scrolled-nav{
+
+    background: $color-primary !important;
+    height: 80px !important;
+    a{
+        color:black !important;
+    }
+
+}
 .navbar-nav {
     @include navItem();
+}
+.menu-btn{
+    display: none !important;
+    z-index: 2;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+}
+ .burger{
+    position: relative;
+} 
+
+ .main-burger-line{
+    width: 22px;
+    height: 2px;
+    background: $color-primary;
+    transition: all .2s linear;
+    animation-duration: .2s;
+}
+.burger-line{
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    border-radius: 2px;
+    background: $color-primary;
+    transition: all .2s linear;
+    animation-duration: .2s;
+}
+.line-before{
+   top:6px;
+}
+.line-after{
+    bottom:6px;
+}
+.menu-btn.open .burger .main-burger-line{
+    background: transparent;
+}
+.menu-btn.open .burger .line-before{
+    transform: rotate(135deg);
+    
+}
+.menu-btn.open .burger .line-after{
+    transform: rotate(-135deg);
+} 
+@media screen and (max-width:768px){
+    .menu-btn{
+        display: flex !important;
+    }
+    .navbar-nav{
+        display: none !important;
+    }
 }
