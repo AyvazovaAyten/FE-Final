@@ -4,12 +4,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: calc(33.33% - 20px);
+    padding: 24px 2px;
     border: 1px solid $color-border;
     border-radius: 6px;
-    cursor: pointer;
-    padding: 0 !important;
+    cursor: pointer; 
     margin-top: 24px !important;
+    transition:all 1s linear;
     img{
         height: 180px;
         width: 100%;
@@ -29,16 +30,9 @@
         line-height: 1.62;
         color: $color-text;
     }
-   
-}
-
-@media only screen and (min-width: 768px){
-.card{
-    width: calc(33.33% - 20px) !important;
-    padding: 24px 2px !important;
+    
     &:hover{
-        transform: scale(1.05);
+        transform: scale(1.04) !important;
     }
-}
     
 }

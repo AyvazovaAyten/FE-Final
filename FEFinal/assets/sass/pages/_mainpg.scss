@@ -1,8 +1,10 @@
 @import "../base/variables";
-
 .col-custom{
-  width: 62%;
   max-width: 610px;
+}
+#logo{
+  width: 154px;
+  height: 53px;
 }
   .intro{
     background:
@@ -17,34 +19,31 @@
     background-repeat: no-repeat;
     background-position: 60% 50%;
     color: $color-primary;
+    height:100vh;
 h1{
-  margin-top: 110px;
+  margin-top: 92px;
   font-weight: 600;
   line-height: 1.29;
   letter-spacing: -0.01em; 
 }
 p{
   font-size: 15px;
+  padding-bottom: 48px;
+  margin-top: 12px;
   line-height: 1.7 !important;
   animation-delay: .3s;
 }
-h1, p{
-  opacity: 0;
-  transform: translateY(32px);
-  transition: .2s linear;
-  animation-name: text;
-  animation-duration: .5s;
-  animation-fill-mode: forwards;
-}}
-
+}
 
 .second-section{
   padding-top: $mtops;
-
+  .text-sct{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 
-
-.solutions-section{
+#solutions-section{
   background:
   url('../images/solutions_bg-1.jpg');
   background-attachment: fixed;
@@ -61,7 +60,6 @@ h1, p{
     max-width: 520px;
     font-size: 27px;
     font-weight: 600;
-    padding: 120px 20px 120px;
   }
   .blue-bg{
     background-color: rgba(45, 49, 146, 0.6) !important;
@@ -79,99 +77,65 @@ h1, p{
 
 .count-section{
   padding-top: $mtopl;
+  .count-row{
+    padding: 80px 0;
+    &.second{
+      border-top: 1px solid #DBE0E4
+    }
+    .txt{
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.86;
+    }
+  }
+  .count{
+    color: $color-secondary;
+    font-weight: 600;
+    font-size: 44px;
+    letter-spacing: 0.02em;
+    .count-word{
+      margin: 0px 4px;
+    }
+    .number{
+      margin-right: 20px;
+    }
+  }
 
 }
+
 .map-section{
   padding-top: $mtopl;
-}
-
-//XS
-@media only screen and (max-width: 479px) {
-  .intro{
-    height:70vh !important;
-    h1{
-      font-size: 21px;
+  .container-xl{
+    position: relative;
+  }
+  .world-map{
+    margin-top: 0px;
+    svg{
+      transform: scale(1.08);
+      width: 100%;
+      height: 100%;
     }
   }
-}
-
-//S
-@media only screen and (min-width: 767px){}
-.intro{
-  height:100vh !important;
-h1 {
-  font-size: 32px;
-}}
-//M
-@media only screen and (min-width: 1024px){
-  .intro{
-    h1{
-      font-size: 48px;
-    }
-    .scroll-btn{
-      display: flex !important;
-    }
+  .section-title{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
   }
-
-  header{
-    img{
-      width: 154px;
-    }
-}
-.solutions-section{
-  height: calc(100vh - #{$nav-height}) !important;
-  h3{
-    font-size: 54px !important;
-    padding: 120px 20px 120px;
+  .mini-div{
+    position: absolute;
+    z-index: 2;
+    padding: 24px;
+    border: 1px solid $color-border;
+    border-radius: 4px;
+    width: 240px;
+    bottom:20px;
+    left: 0;
+    display: none;
   }
-  .container-md{
-    margin-left: 24px;
-  }
- ul{
-   p{ 
-     font-size: 18px;
-     font-weight: 600;
-   }
- }
-  }
-
   
 }
-//L 
 
-
-//XL
-@media only screen and (min-width: 1281px) {
-  
-  .intro{
-   
-    h1{
-      font-size: 48px;
-    }
-    p{
-      font-size: 15px;
-      line-height: 1.9 !important;
-    }
-  }
-  .second-section{
-    h2{
-      font-size: 36px !important;
-      
-    }
-  }
-
-  .solutions-section{
-    h3{
-      padding:20px !important;
-    }
-    
-    p{
-      font-size: 21px !important;
-      font-weight: 600 !important;
-      text-align: left !important;
-    }
-  }
-}
  
  
   
