@@ -14,11 +14,11 @@
 
 <body>
     <header class="sticky-top d-flex align-items-center">
-        <div class="container-lg d-flex justify-content-center">
-            <div class="row w-100">
+        <div class="container-xl d-flex justify-content-center">
+            <div class="row w-100 m-0">
                 <div class="col-12 pl-0 pr-0">
-                    <nav class="navbar navbar-expand-lg navbar-light w-100 d-flex justify-content-between p-0">
-                        <a href=""><img class="navbar-brand" src="./assets/images/logo.svg"></a>
+                    <nav class="navigation d-flex justify-content-between align-items-center">
+                        <a href="index.html" id="logo"></a>
                         <div class="menu-btn">
                             <div class="burger">
                                 <div class="burger-line line-before"></div>
@@ -26,15 +26,15 @@
                                 <div class="burger-line line-after"></div>
                             </div>
                         </div>
-                        <div class="collapse justify-content-end navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-item nav-link" href="#">What we do</a>
-                                <a class="nav-item nav-link" href="#">Who we are</a>
-                                <a class="nav-item nav-link" href="#">Jobs</a>
-                                <a class="nav-item nav-link" href="#">News</a>
-                                <a class="nav-item nav-link" href="#">Contacts</a>
-                            </div>
+
+                        <div class="navigation-items">
+                            <a class="" href="#second-section">What we do</a>
+                            <a class="" href="#solutions-section">Who we are</a>
+                            <a class="" href="#jobs-section">Jobs</a>
+                            <a class="" href="#news-section">News</a>
+                            <a class="item" href="#contacts-section">Contacts</a>
                         </div>
+
                     </nav>
                 </div>
             </div>
@@ -42,62 +42,68 @@
     </header>
     <div class="menu-nav vw-100">
         <div class="nav-links d-flex flex-column">
-            <a class="nav-mobile-link" href="#">What we do</a>
-            <a class="nav-mobile-link" href="#">Who we are</a>
-            <a class="nav-mobile-link" href="#">Executive team</a>
-            <a class="nav-mobile-link" href="#">Jobs</a>
-            <a class="nav-mobile-link" href="#">News</a>
-            <a class="nav-mobile-link" href="#">Contacts</a>
+            <a class="nav-mobile-link" href="#second-section">What we do</a>
+            <a class="nav-mobile-link" href="#solutions-section">Who we are</a>
+            <a class="nav-mobile-link" href="#count-section">Executive team</a>
+            <a class="nav-mobile-link" href="#jobs-section">Jobs</a>
+            <a class="nav-mobile-link" href="#news-section">News</a>
+            <a class="nav-mobile-link" href="#contacts-section">Contacts</a>
         </div>
     </div>
-    <section class="intro vh-100 vw-100">
-        <div class="container-lg h-100 w-100 position-relative">
-            <div class="row h-100">
-                <div class="col-custom col-lg-7">
-                    <h1 class="pb-lg-4 mb-2 mt-2">First Company in the world to launch Mobile Fintech Services</h1>
+    <section class="intro vw-100" id="intro">
+        <div class="container-xl h-100 w-100 position-relative">
+            <div class="row h-100 w-100 m-0 align-items-center justify-content-between">
+                <div class="col-custom p-0">
+                    <h1 class="pb-lg-4">First Company in the world to launch Mobile Fintech Services</h1>
                     <p class="mb-4">We are serving over 25 companies in 20 countries worldwide and this number is
                         growing with new
                         launches every quarter.</p>
                 </div>
-                <div class="scroll-btn position-absolute d-flex align-items-center">
+                <a class="scroll-btn position-absolute d-flex align-items-center p-0" href="#second-section">
                     <img src="./assets/images/mouse_icon.svg" alt="mouse">
                     <span class="ml-3 mt-2">Scroll to discover us!</span>
-                </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="second-section">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-12 col-md-6">
-                    <h2>What we do</h2>
+    <section class="second-section" id="second-section">
+        <div class="container-xl">
+            <div class="row justify-content-between m-0 p-0">
+                <div class="col-12 col-md-6 ml-0 mr-0 mb-4 p-0">
+                    <h2 class="section-title">What we do</h2>
                 </div>
-                <div class="">
-                    <div class="more-btn d-flex align-items-center">
-                        <span>Read more</span>
+                <div class="more-btn d-flex align-items-center">
+                    <span>Read more</span>
+                </div>
+            </div>
+            <div class="row flex-column flex-md-row justify-content-between w-100 m-0 p-0">
+
+                <div class="card">
+                    <img class="card-img-top" src="./assets/images/card_img/1.svg" alt="Card image cap">
+                    <div class="card-body">
+                        <h3 class="card-title w-100">AI & ML based scoring</h3>
+                        <p class="card-text">We determine the credit-worthiness of each client, using behavioral scoring
+                            model.</p>
                     </div>
                 </div>
-            </div>
-            <div class="row flex-column justify-content-between flex-md-row mt-5 w-100">
-
-                <div class="custom-card">
-                    <img src="./assets/images/card_img/1.svg" alt="card_img">
-                    <h3>AI & ML based scoring</h3>
-                    <p>We determine the credit-worthiness of each client, using behavioral scoring model.</p>
+                <div class="card">
+                    <img class="card-img-top" src="./assets/images/card_img/1.svg" alt="Card image cap">
+                    <div class="card-body">
+                        <h3 class="card-title">Micro-lending technology</h3>
+                        <p class="card-text">We deliver microlending solution which includes processing, disbursement,
+                            repayment, recovery and
+                            management of loans.</p>
+                    </div>
                 </div>
-                <div class="custom-card">
-                    <img src="./assets/images/card_img/1.svg" alt="card_img">
-                    <h3>Micro-lending technology</h3>
-                    <p>We deliver microlending solution which includes processing, disbursement, repayment, recovery and
-                        management of loans.</p>
-                </div>
-                <div class="custom-card">
-                    <img src="./assets/images/card_img/1.svg" alt="card_img">
-                    <h3>Big data engine</h3>
-                    <p>We use latest advancements in Artificial Intelligence and Machine Learning to maximize our value
-                        proposition.</p>
-
+                <div class="card">
+                    <img class="card-img-top" src="./assets/images/card_img/1.svg" alt="Card image cap">
+                    <div class="card-body">
+                        <h3 class="card-title">Big data engine</h3>
+                        <p class="card-text">We use latest advancements in Artificial Intelligence and Machine Learning
+                            to maximize our value
+                            proposition.</p>
+                    </div>
                 </div>
 
             </div>
@@ -106,40 +112,74 @@
 
     </section>
 
-    <section class="w-100 solutions-section">
-        <div class="row align-items-center h-100 w-100 m-0">
+    <section class="w-100 solutions-section" id="solutions-section">
+        <div class="row align-items-center justify-content-center h-100 w-100 m-0">
             <div class="col-12 col-md-6 d-flex justify-content-center p-0 m-0">
                 <h3>Tech-Powered Financial Solutions</h3>
             </div>
-            <div class="col-12 col-md-6 blue-bg h-100 d-flex align-items-center">
-                <ul>
-                    <li>
-                        <p>AI and ML based scoring engine</p>
-                    </li>
-                    <li>
-                        <p>End-to-end lending technology</p>
-                    </li>
-                    <li>
-                        <p>High-performing and secure operating platform</p>
-                    </li>
-                    <li>
-                        <p>Fast and consistent decision making</p>
-                    </li>
-                    <li>
-                        <p>
-                            Flexible customizable solution
-                        </p>
-                    </li>
-                </ul>
+            <div class="col-12 col-md-6 blue-bg h-100 m-0">
+                <div class="container-md h-100 w-100 d-flex align-items-center">
+                    <ul class="m-0 p-0">
+                        <li>
+                            <p>AI and ML based scoring engine</p>
+                        </li>
+                        <li>
+                            <p>End-to-end lending technology</p>
+                        </li>
+                        <li>
+                            <p>High-performing and secure operating platform</p>
+                        </li>
+                        <li>
+                            <p>Fast and consistent decision making</p>
+                        </li>
+                        <li>
+                            <p>
+                                Flexible customizable solution
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section class="w-100 count-section">
-        <div class="container-lg">
-
+    <section class="w-100 count-section" id="count-section">
+        <div class="container-xl">
+            <div class="row m-0 p-0">
+                <div class="col-12 m-0 p-0">
+                    <h2 class="section-title">Enhance your opportunities with us</h2>
+                </div>
+            </div>
         </div>
     </section>
+    <section class="w-100" id="map-section">
+        <div class="container-xl">
+            <div class="row m-0 p-0">
+                <div class="col-12 m-0 p-0">
+                    <h2 class="section-title">Simbrella Geography</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-100" id="clients-section">
+
+    </section>
+    <section class="w-100" id="team-section">
+
+    </section>
+    <section class="w-100" id="jobs-section">
+
+    </section>
+    <section class="w-100" id="news-section">
+
+    </section>
+    <section class="w-100" id="contacts-section">
+
+    </section>
+    <footer>
+
+    </footer>
     <script src="./js/main.js"></script>
 </body>
 

@@ -1,10 +1,16 @@
 @import "../base/variables";
+.scroll-btn{
+    cursor: pointer;
+    display: none !important;
+    bottom: 40px;
+    font-size: 14px;
+  }
+
 .more-btn{
     width: 200px;
     height: 56px;
     border: 3px solid $color-border;
     border-radius: 12px;
-    margin-right: 8px;
     cursor: pointer;
     transition: .2s;
 span{
