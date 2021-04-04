@@ -5,6 +5,7 @@
 header{
     transition: .2s linear;
     &.scrolled-nav{
+        box-shadow: 0 0 10px 0 rgba(41, 41, 41, 0.1) !important;
 
         #logo{
             background-image: url('../images/logo_colored.svg') !important;
@@ -48,8 +49,6 @@ header{
 
     background: $color-primary !important;
     height: 80px !important;
-    
-
 }
 .menu-btn{
     display: none !important;

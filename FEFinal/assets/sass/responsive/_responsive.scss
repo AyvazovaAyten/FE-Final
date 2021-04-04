@@ -42,9 +42,24 @@
         h3{
           padding: 120px 20px 120px;
         }
-        .container-md{
-          justify-content: center;
+        
+    }
+
+    .count-section{
+      .count-row{
+        padding:0;
+        &.second{
+          border-top: none;
         }
+        .txt{
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+      .count{
+        font-size: 27px;
+      }
+    
     }
 }
 
@@ -73,10 +88,25 @@
       h3{
         padding: 120px 20px 120px;
       }
-      .container-md{
-        justify-content: center;
-      }
+      
   }
+  .count-section{
+    .count-row{
+      padding:0;
+      &.second{
+        border-top: none;
+      }
+      .txt{
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+    .count{
+      font-size: 32px;
+    }
+  
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -106,9 +136,7 @@
           font-size: 32px;
           padding:0px 40px;
         }
-        .container-md{
-          margin-left: 20px;
-        }
+        
        ul{
          p{ 
            font-size: 18px;
@@ -118,6 +146,21 @@
          }
        }
    }
+   .count-section{
+    .count-row{
+      padding:40px 0;
+    }
+    .count{
+      font-size: 32px;
+    }
+  
+  }
+  .clients-section{
+    .client-div{
+    max-width: 32%;
+    margin: 8px 0;
+    }
+  }
 
 }
 
@@ -138,9 +181,7 @@
         font-size: 32px;
         padding:0px 40px;
       }
-      .container-md{
-        margin-left: 24px;
-      }
+      
      ul{
        p{ 
          font-size: 21px;
@@ -150,19 +191,32 @@
        }
      }
  }
- .mini-div{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .map-section{
+  .map-img{
+    display: none;
+  }
   .world-map{
-    margin-top: -140px;}
+    margin-top: -90px;
+    display: block;}
     .mini-div{
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
+
+    .section-body{
+      .section-title{
+        margin-top: 48px;
+        text-align: left;
+      }
+    }
+}
+
+.clients-section{
+  .client-div{
+  max-width: 23%;
+  margin: 12px 0;
+  }
 }
 
 }
@@ -185,7 +239,6 @@
        ul{
          p{ 
            font-size: 21px;
-           margin-left: 80px;
            text-align: left;
            font-weight: 600;
            padding: 0px;
@@ -195,15 +248,52 @@
          }
        }
         }
+        .count-section{
+          .count-row{
+            padding:80px 0;
+          }
+          .count{
+            font-size: 48px;
+          }
+        
+        }
         
         .map-section{
+         .map-container{
+           max-width: 1280px;
+         }
+         .map-img{
+           display: none;
+         }
           .world-map{
-            margin-top: -160px;}
+            margin-top: -110px;
+            display: block;
+          }
             .mini-div{
               display: flex;
               flex-direction: column;
               justify-content: center;
             }
+            .section-body{
+              .section-title{
+                margin-top: 56px;
+                text-align: left;
+              }
+            }
+        }
+        .clients-section{
+          .client-div{
+          max-width: 22.2%;
+          margin: 12px 0;
+          }
         }
 
+}
+
+@media (min-height: 850px){
+  
+    #second-section, #count-section, #map-section, #clients-section, #jobs-section, #news-section {
+      min-height: 1px !important;
+  
+}
 }
