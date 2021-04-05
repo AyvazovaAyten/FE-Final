@@ -1,5 +1,5 @@
 @import "../base/variables";
-.card{
+.my-card{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,6 +33,45 @@
     
     &:hover{
         transform: scale(1.04) !important;
+    }
+    
+}
+.news-section{
+    .news-card{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(33.33% - 20px);
+    padding: 0 0 24px;
+    cursor: pointer; 
+    font-size: 18px;
+    border:none;
+
+    .card-image{
+        overflow: hidden;
+        border-radius: 4px;
+    }
+    img{
+        height: auto;
+        transition: all .4s linear;
+    }
+    .card-title{
+        padding: 0 0 48px;
+        font-weight: 500;
+        margin: 0;
+    }
+    .card-body{
+        padding: 1.25rem 0;
+    }
+    p{
+        color: $color-text;
+    }
+    &:hover{
+        img{
+            transform: scale(1.05);
+        }  
+    }
     }
     
 }

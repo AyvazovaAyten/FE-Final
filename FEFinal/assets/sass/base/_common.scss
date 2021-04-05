@@ -15,7 +15,7 @@ header{
       width: 154px !important;
     }
 }
-section[class*="section"]{
+footer, section[class*="section"]{
     min-height: calc(100vh - #{$nav-height}) !important;
     overflow: hidden;
     padding: 35px 0 48px;

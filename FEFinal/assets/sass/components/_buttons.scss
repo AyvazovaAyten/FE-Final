@@ -13,24 +13,34 @@
     border-radius: 12px;
     cursor: pointer;
     transition: .2s;
+    position: relative;
+    display: flex;
+    align-items:center;
+
+    &::after{
+        content: url(../images/link_orange_icon.svg);
+        position: absolute;
+        right: 24px;
+        transition: .2s;
+    }
 span{
     font-size: 15px;
     font-weight: 600;
     padding-left: 24px;
     position: relative;
 
-    &::after{
-        content: url(../images/link_orange_icon.svg);
-        position: absolute;
-        top: 0;
-        right: -72px;
-        transition: .2s;
-    }
+    // &::after{
+    //     content: url(../images/link_orange_icon.svg);
+    //     position: absolute;
+    //     top: 0;
+    //     right: -72px;
+    //     transition: .2s;
+    // }
 }
 &:hover{
     border-color: $color-secondary;
-    span::after{
-        right: -78px;
+    &::after{
+        right: 18px;
     }
 }
 }

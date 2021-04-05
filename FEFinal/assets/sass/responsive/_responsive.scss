@@ -1,6 +1,6 @@
 @import "../base/variables";
 @media (min-width: 240px) and (max-width: 479px) {
-    section[class*="section"]{
+    footer, section[class*="section"]{
         padding: 30px 0 32px;
     }
 .section-title{
@@ -46,6 +46,7 @@
     }
 
     .count-section{
+      text-align: center;
       .count-row{
         padding:0;
         &.second{
@@ -57,9 +58,46 @@
         }
       }
       .count{
-        font-size: 27px;
+        display: inline;
+        .number, .count-word{
+          font-size: 27px;
+        }
       }
     
+    }
+
+    .jobs-section{
+      .col-4{
+        text-align: center;
+        h3{
+          font-size: 14px;
+          margin-top: 8px;
+        }
+      }
+      .blue-bg{
+        z-index: 1;
+        padding: 20px;
+        margin-left: 0px;
+        h3{
+          padding: 0px;
+          font-size: 21px;
+        }
+        p{
+          font-size:14px;
+          padding: 0 0 4px;
+        }
+      }
+    }
+    .news-section{
+      .news-card{
+        width: 100%;
+        padding: 0;
+        font-size: 14px;
+        .card-title{
+          padding: 0 0 10px;
+          font-size: 16px;
+        }
+      }
     }
 }
 
@@ -102,11 +140,47 @@
       }
     }
     .count{
-      font-size: 32px;
+      .number, .count-word{
+        font-size: 32px;
+      }
     }
   
   }
 
+  .jobs-section{
+    .col-4{
+      text-align: center;
+      h3{
+        font-size: 15px;
+      }
+    }
+    .blue-bg{
+      z-index: 1;
+      padding: 20px;
+      margin-left: 0px;
+      padding: 20px 20px 25px;
+      h3{
+        font-size: 24px;
+        padding: 0 0 12px;
+      }
+      p{
+        font-size:16px;
+        padding: 0 0 4px;
+      }
+    }
+  }
+
+  .news-section{
+    .news-card{
+      width: 100%;
+      padding: 0;
+      font-size: 16px;
+      .card-title{
+        padding: 0 0 20px;
+        font-size: 18px;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -151,7 +225,10 @@
       padding:40px 0;
     }
     .count{
-      font-size: 32px;
+      .number, .count-word{
+
+        font-size: 32px;
+      }
     }
   
   }
@@ -161,7 +238,46 @@
     margin: 8px 0;
     }
   }
-
+  .jobs-section{
+    .col-4{
+      h3{
+        font-size: 20px;
+      }
+    }
+    .blue-bg{
+      padding: 30px;
+      margin-left: -110px;
+      h3{
+        padding: 0 0 16px;
+        font-size: 24px;
+      }
+      p{
+        font-size:16px;
+        padding: 0 0 24px;
+      }
+    }
+  }
+  
+  .news-section{
+    .news-card{
+      font-size: 16px;
+      .card-title{
+        padding: 0 0 24px;
+        font-size: 16px;
+      }
+    }
+  }
+  footer{
+    .city-btn, .cities{
+      padding: 0 0 40px;
+    }
+    .city-info{
+      padding: 10px 0 20px;
+    }
+    .city{
+      padding: 20px 0;
+    }
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1280px){
@@ -218,6 +334,17 @@
   margin: 12px 0;
   }
 }
+.team-section{
+  display: block;
+}
+
+.jobs-section{
+  .col-4{
+    h3{
+      font-size: 20px;
+    }
+  }
+}
 
 }
 
@@ -253,7 +380,9 @@
             padding:80px 0;
           }
           .count{
-            font-size: 48px;
+            .number, .count-word{
+              font-size: 48px;
+            }
           }
         
         }
@@ -287,12 +416,21 @@
           margin: 12px 0;
           }
         }
+        .team-section{
+          display: block;
+        }
+        .news-section{
+          .news-div{
+            padding: 0 0 40px;
+          }
+        }
+        
 
 }
 
 @media (min-height: 850px){
   
-    #second-section, #count-section, #map-section, #clients-section, #jobs-section, #news-section {
+    #second-section, #count-section, #map-section, #clients-section, #jobs-section, #news-section, footer {
       min-height: 1px !important;
   
 }
