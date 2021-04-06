@@ -1,0 +1,111 @@
+@import "../base/variables";
+body, html {
+  height: 100%;
+}
+.intro-bg{
+    height: auto;
+    padding: 48px 0;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../images/sectionBG/we_do_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -110px;
+    width: 100%;
+
+    .section-head {
+        padding: 72px 0 0;
+        font-size: 36px;
+        color: $color-primary;
+      
+    }
+    .container-xl{
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end
+    }
+  
+}
+.card-section{
+  background-color: $color-light-bg;
+  //padding: 40px 0;
+  min-height: 500px;
+  padding: 100px 0;
+  
+  .scoring{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-primary;
+    align-items: center;
+    padding: 40px 24px 60px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+  }
+  .card-body{
+    h3, p{
+      text-align: center;
+      font-weight: 400;
+    }
+    h3{
+      font-size: 24px;
+      padding: 0 0 16px;
+    }
+    p{
+      font-size: 16px;
+    }
+    
+  }
+  .information-list{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+  }
+  ul{
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+  }
+
+  li{
+    font-size: 20px;
+    position: relative;
+    padding-bottom: 32px;
+    &::before{
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $color-secondary;
+      position: absolute;
+      top: 8px;
+      left:-18px;
+    }
+  }
+}
+
+.fixed-image{
+  z-index: -1;
+    max-height: 480px;
+    min-height: 270px;
+    background:linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../images/sectionBG/single_image.jpg');
+    background-attachment: fixed !important;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+}
+.page-footer{
+  background-color:black;
+}

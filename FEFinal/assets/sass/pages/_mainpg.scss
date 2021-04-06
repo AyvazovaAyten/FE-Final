@@ -236,6 +236,9 @@ p{
     min-width: 200px;
     max-width: 200px;
   }
+  .section-title{
+    padding: 0;
+  }
   .cities{
     width: 100%;
     display: flex;
@@ -279,15 +282,6 @@ p{
     color: $color-primary;
   }
 
-  .copyright{
-    .siteby{
-      font-size: 12px;
-    }
-    p{
-      font-size: 16px;
-      color: #999999;
-    }
-  }
 }
  
  

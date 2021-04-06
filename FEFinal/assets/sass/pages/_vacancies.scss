@@ -1,0 +1,30 @@
+@import "../base/variables";
+.vacancies-intro{
+    img{
+        width: 460px;
+    }
+    h1{
+        padding: 0 0 32px;
+        font-size: 32px;
+        text-transform: uppercase;
+    }
+    p{
+        padding: 0 0 20px;
+        font-size: 18px;
+        color: $color-text;
+    }
+    a{
+        color: #0e80e5;
+    }
+}
+.vc-header{
+    
+        #logo{
+            background-image: url('../images/logo_colored.svg') !important;
+         }
+    
+}
+.all-vacancies{
+    background-color:$color-light-bg;
+    padding: 100px 0;
+}

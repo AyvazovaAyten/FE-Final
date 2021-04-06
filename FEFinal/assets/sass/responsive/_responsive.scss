@@ -99,6 +99,68 @@
         }
       }
     }
+
+    .contacts{
+      padding: 20px 0 20px;
+    .section-title, .cities{
+      padding: 0 0 20px;
+    }
+    .cities{
+      h3{
+        padding: 0 10px !important;
+        font-size: 16px;
+        &:first-child{
+          padding: 0 10px 0 0 !important;
+          border-left:none ;
+        }
+      }
+     
+      
+    }
+    .city-info {
+      padding: 22px 0 20px;
+      span{
+        font-size: 14px;
+      }
+      h3{
+        font-size: 16px;
+      }
+  }
+    
+    }
+    .copyright{
+      padding-top: 14px;
+      .siteby,p{
+        text-align: center;
+      }
+      p{
+        font-size: 14px;
+      }
+      .siteby{
+        padding-bottom: 14px;
+      }
+    }
+
+
+
+    //////WHAT WE DO//////
+
+    .intro-bg{  
+      .container-xl{
+      min-height: 1px;
+      }
+      .section-head{
+        font-size: 24px;
+      }
+    }
+
+    .card-section{
+      li{
+        font-size: 16px;
+      }
+    }
+
+    /////////////////////
     
 }
 
@@ -182,6 +244,56 @@
       }
     }
   }
+
+
+  .contacts{
+    padding: 20px 0 20px;
+    .section-title, .cities{
+      padding: 0 0 20px;
+    }
+    .cities{
+      h3{
+        font-size: 21px;
+      }
+      
+    }
+    .city-info {
+      padding: 28px 0 20px;
+      span{
+        font-size: 14px;
+      }
+      h3{
+        font-size: 16px;
+      }
+  }
+
+  }
+  .copyright{
+    padding-top: 24px;
+    .siteby,p{
+      text-align: center;
+      
+    }
+    .siteby{
+      padding-bottom: 14px;
+    }
+  }
+
+
+    //////WHAT WE DO//////
+
+    .intro-bg{  
+      .container-xl{
+      min-height: 200px;
+      }
+      .section-head{
+        font-size: 32px;
+      }
+    }
+
+
+    /////////////////////
+
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -268,7 +380,7 @@
       }
     }
   }
-  footer{
+  .contacts{
     .city-btn, .cities{
       padding: 0 0 40px;
     }
@@ -346,6 +458,16 @@
     }
   }
 }
+
+ //////WHAT WE DO//////
+
+ .intro-bg{  
+  .container-xl{
+  min-height:420px
+  }
+}
+
+/////////////////////
 
 }
 
@@ -425,6 +547,16 @@
             padding: 0 0 40px;
           }
         }
+        
+    //////WHAT WE DO//////
+
+    .intro-bg{  
+      .container-xl{
+      min-height:480px
+      }
+    }
+    
+    /////////////////////
         
 
 }

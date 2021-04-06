@@ -7,6 +7,18 @@ $(document).ready(function () {
     const header = $('header');
 
     let menuOpen = false;
+    function closeburger(){
+        $('.menu-btn').removeClass('open');
+
+        setTimeout(function () {
+            burgerBf.style.top = "6px"
+            burgerAf.style.bottom = "6px"
+            centerLine.removeClass('open');
+        }, 500);
+        menuOpen = false;
+        menuNav.removeClass('shown');
+        $('body').removeClass('hidden-scroll');
+    }
 
     $('.menu-btn').click(function () {
         if (!menuOpen) {
@@ -23,26 +35,32 @@ $(document).ready(function () {
             }, 400);
 
         } else {
-            $('.menu-btn').removeClass('open');
-
-            setTimeout(function () {
-                burgerBf.style.top = "6px"
-                burgerAf.style.bottom = "6px"
-                centerLine.removeClass('open');
-            }, 500);
-            menuOpen = false;
-            menuNav.removeClass('shown');
-            $('body').removeClass('hidden-scroll');
+          closeburger();
         }
 
     });
 
 
-///Mobile-menu links click
+    ///Mobile-menu links click
+    
+ function Hide(){
+    menuOpen = false;
+    menuNav.removeClass('shown');
+    $('body').removeClass('hidden-scroll');
+ }
  
 
+  $('.nav-mobile-link').each(function () {
+      let link = $(this).attr('data-link');
+     $(this).on('click', function() {
+        $("html, body").animate({
+            scrollTop: parseInt($(`${link}`).offset().top)-80
+          }, 10);
+        closeburger();
+      });
+ })
 
-///
+    
 
 
 
@@ -156,7 +174,15 @@ $(document).ready(function () {
 
     ///
 
-
+///Card clicks
+$('.my-card').each(function(){
+    let article = $(this).attr('data-article');
+    $(this).click(function () {
+        location.href = `${article}`;
+    })
+  
+})
+///
 
 });
 
