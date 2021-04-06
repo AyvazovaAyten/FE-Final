@@ -37,7 +37,7 @@ header{
         text-decoration: none;
         transition: .2s;
 
-        &:hover {
+        &:hover, &.active {
             color: $color-secondary !important;
         }
         
@@ -50,6 +50,7 @@ header{
     background: $color-primary !important;
     height: 80px !important;
 }
+
 .menu-btn{
     display: none !important;
     z-index: 2;
@@ -68,8 +69,7 @@ header{
     width: 22px;
     height: 2px;
     background: $color-primary;
-    transition: all .2s linear;
-    animation-duration: .2s;
+    transition: .2s linear;
 }
 .burger-line{
     position: absolute;
@@ -77,7 +77,7 @@ header{
     height: 2px;
     border-radius: 2px;
     background: $color-primary;
-    transition: all .2s linear;
+    transition: all .3s linear;
     animation-duration: .2s;
 }
 .line-before{
@@ -86,13 +86,15 @@ header{
 .line-after{
     bottom:6px;
 }
-.menu-btn.open .burger .main-burger-line{
-    background: transparent;
+.main-burger-line.open{
+    background: transparent !important;  
 }
+
 .menu-btn.open .burger .line-before{
     transform: rotate(135deg);
     
 }
+
 .menu-btn.open .burger .line-after{
     transform: rotate(-135deg);
 } 

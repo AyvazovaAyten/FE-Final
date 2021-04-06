@@ -15,7 +15,7 @@ header{
       width: 154px !important;
     }
 }
-footer, section[class*="section"]{
+ .what-we-do, .who-we-are, .jobs, .news, .contacts, .solutions-section, .map-section, .clients-section, .team-section, .contacts{
     min-height: calc(100vh - #{$nav-height}) !important;
     overflow: hidden;
     padding: 35px 0 48px;
@@ -29,15 +29,22 @@ footer, section[class*="section"]{
       letter-spacing: 0.01em;
       color:$color-bg;
   }
-  .animate{
+  
+  .intro, #what-we-do, .clients-section, #jobs, #news{
+
     h1, h2, h3, p, .card{
       opacity: 0;
-      transform: translateY(32px);
-      transition: all .4s linear;
-      animation-name: sectionAnimation;
-      animation-delay: .1s;
-      animation-duration: .7s;
-      animation-fill-mode: forwards;
     }
-   
+    &.animate{
+      h1, h2, h3, p, .card{
+        opacity: 0;
+        transform: translateY(32px);
+        transition: all .4s linear;
+        animation-name: sectionAnimation;
+        animation-delay: .1s;
+        animation-duration: .7s;
+        animation-fill-mode: forwards;
+      }
+    }
+
   }

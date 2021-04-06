@@ -1,6 +1,6 @@
 @import "../base/variables";
 @media (min-width: 240px) and (max-width: 479px) {
-    footer, section[class*="section"]{
+ .what-we-do, .who-we-are, .work-with-us, .jobs, .contacts, .clients-section, .contacts, .section[class*="section"]{
         padding: 30px 0 32px;
     }
 .section-title{
@@ -24,7 +24,7 @@
         }
       }
 
-      .second-section{
+      .what-we-do{
 
         .text-sct{
             min-width: 100%;
@@ -37,15 +37,15 @@
         }
       }
 
-      #solutions-section{
+      .solutions-section{
         padding: 0;
         h3{
-          padding: 120px 20px 120px;
+          padding: 120px 0px 120px;
         }
         
     }
 
-    .count-section{
+    .who-we-are{
       text-align: center;
       .count-row{
         padding:0;
@@ -66,7 +66,7 @@
     
     }
 
-    .jobs-section{
+    .jobs{
       .col-4{
         text-align: center;
         h3{
@@ -88,7 +88,7 @@
         }
       }
     }
-    .news-section{
+    .news{
       .news-card{
         width: 100%;
         padding: 0;
@@ -99,6 +99,7 @@
         }
       }
     }
+    
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -121,14 +122,14 @@
       padding: 0;
   }
 
-    #solutions-section{
+    .solutions-section{
       padding: 0;
       h3{
         padding: 120px 20px 120px;
       }
       
   }
-  .count-section{
+  .who-we-are{
     .count-row{
       padding:0;
       &.second{
@@ -147,7 +148,7 @@
   
   }
 
-  .jobs-section{
+  .jobs{
     .col-4{
       text-align: center;
       h3{
@@ -170,7 +171,7 @@
     }
   }
 
-  .news-section{
+  .news{
     .news-card{
       width: 100%;
       padding: 0;
@@ -193,7 +194,7 @@
         }
         
       }
-      .second-section{
+      .what-we-do{
         .card{
           .card-title{
             font-size: 21px;
@@ -204,7 +205,7 @@
         }
       }
 
-      #solutions-section{     
+      .solutions-section{     
         height: calc(100vh - #{$nav-height}) !important;
         h3{
           font-size: 32px;
@@ -220,7 +221,7 @@
          }
        }
    }
-   .count-section{
+   .who-we-are{
     .count-row{
       padding:40px 0;
     }
@@ -238,7 +239,7 @@
     margin: 8px 0;
     }
   }
-  .jobs-section{
+  .jobs{
     .col-4{
       h3{
         font-size: 20px;
@@ -258,7 +259,7 @@
     }
   }
   
-  .news-section{
+  .news{
     .news-card{
       font-size: 16px;
       .card-title{
@@ -291,7 +292,7 @@
         
     }
 
-    #solutions-section{     
+    .solutions-section{     
       height: calc(100vh - #{$nav-height}) !important;
       h3{
         font-size: 32px;
@@ -322,7 +323,7 @@
 
     .section-body{
       .section-title{
-        margin-top: 48px;
+        margin-top: 0px;
         text-align: left;
       }
     }
@@ -338,7 +339,7 @@
   display: block;
 }
 
-.jobs-section{
+.jobs{
   .col-4{
     h3{
       font-size: 20px;
@@ -357,7 +358,7 @@
         font-size: 48px;
       } 
      }
-    #solutions-section{     
+    .solutions-section{     
         height: calc(100vh - #{$nav-height}) !important;
         h3{
           font-size: 54px;
@@ -375,7 +376,7 @@
          }
        }
         }
-        .count-section{
+        .who-we-are{
           .count-row{
             padding:80px 0;
           }
@@ -405,7 +406,7 @@
             }
             .section-body{
               .section-title{
-                margin-top: 56px;
+                margin-top: 0px;
                 text-align: left;
               }
             }
@@ -419,7 +420,7 @@
         .team-section{
           display: block;
         }
-        .news-section{
+        .news{
           .news-div{
             padding: 0 0 40px;
           }
@@ -430,7 +431,7 @@
 
 @media (min-height: 850px){
   
-    #second-section, #count-section, #map-section, #clients-section, #jobs-section, #news-section, footer {
+    #who-we-are, #what-we-do, .map-section, #clients-section, #jobs, #news, .solutions-section, .contacts {
       min-height: 1px !important;
   
 }

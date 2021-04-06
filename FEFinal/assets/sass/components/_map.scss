@@ -1,1 +1,42 @@
 @import "../base/variables";
+.world-map{
+    svg{
+        cursor: pointer;
+
+        path{
+            pointer-events:all;
+            &.active{
+              fill: $color-bg;
+            }
+    
+}
+
+
+
+  
+
+    }
+}
+.country-tooltip{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    padding: 0 10px;
+    background: #fff;
+    border-radius: 8px 8px 8px 0;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+
+    img{
+        width: 24px;
+    }
+    span{
+        margin-left: 6px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
+        
