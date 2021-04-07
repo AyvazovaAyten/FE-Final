@@ -7,7 +7,7 @@ $(document).ready(function () {
     const header = $('header');
 
     let menuOpen = false;
-    function closeburger(){
+    function closeburger() {
         $('.menu-btn').removeClass('open');
 
         setTimeout(function () {
@@ -35,32 +35,32 @@ $(document).ready(function () {
             }, 400);
 
         } else {
-          closeburger();
+            closeburger();
         }
 
     });
 
 
     ///Mobile-menu links click
-    
- function Hide(){
-    menuOpen = false;
-    menuNav.removeClass('shown');
-    $('body').removeClass('hidden-scroll');
- }
- 
 
-  $('.nav-mobile-link').each(function () {
-      let link = $(this).attr('data-link');
-     $(this).on('click', function() {
-        $("html, body").animate({
-            scrollTop: parseInt($(`${link}`).offset().top)-80
-          }, 10);
-        closeburger();
-      });
- })
+    function Hide() {
+        menuOpen = false;
+        menuNav.removeClass('shown');
+        $('body').removeClass('hidden-scroll');
+    }
 
-    
+
+    $('.nav-mobile-link').each(function () {
+        let link = $(this).attr('data-link');
+        $(this).on('click', function () {
+            $("html, body").animate({
+                scrollTop: parseInt($(`${link}`).offset().top) - 80
+            }, 10);
+            closeburger();
+        });
+    })
+
+
 
 
 
@@ -122,7 +122,9 @@ $(document).ready(function () {
                 }
             }
 
-            if (window.scrollY > $(this).position().top - 100) {
+            ///Header Link Activating///
+
+            if ((window.scrollY > $(this).position().top - 100)) {
                 let id = '#' + $(this).attr("id")
                 if (id !== '#undefined') {
                     let link = ($(`[href="${id}"]`));
@@ -134,14 +136,25 @@ $(document).ready(function () {
 
                 }
 
+
             }
 
+            if ((window.scrollY < 200) && $(`[href="#what-we-do"]`).hasClass('active')) {
+
+                let link = ($(`[href="#what-we-do"]`));
+                link.removeClass('active');
+            }
+
+
         });
+
+
+
         ///
 
     });
 
-    ///MAP 
+    /// MAP ///
 
     $('circle').each(function () {
 
@@ -174,50 +187,64 @@ $(document).ready(function () {
 
     ///
 
-///Card clicks
-$('.my-card').each(function(){
-    let article = $(this).attr('data-article');
-    $(this).click(function () {
-        location.href = `${article}`;
+    ///Card clicks
+    $('.my-card').each(function () {
+        let article = $(this).attr('data-article');
+        $(this).click(function () {
+            location.href = `${article}`;
+        })
+
     })
-  
-})
-///
+    ///
 
-///City slider
-$('.city-link').each(function(){
-    $(this).click(function(){
-        if(!$(this).hasClass('active-link')){
+    ///City slider
+    $('.city-link').each(function () {
+        $(this).click(function () {
+            if (!$(this).hasClass('active-link')) {
 
-            $('.active-link').removeClass('active-link');
-            $(this).addClass('active-link');
+                $('.active-link').removeClass('active-link');
+                $(this).addClass('active-link');
 
-            let city = $(this).attr('data-target');
-            $('.active-city').removeClass('active-city');
-            $(`${city}`).addClass('active-city');
-            
+                let city = $(this).attr('data-target');
+                $('.active-city').removeClass('active-city');
+                $(`${city}`).addClass('active-city');
+
+            }
+        })
+    })
+
+    ///
+
+    ///Team mobile click///
+    $('.nav-mob').click(
+        function (event) {
+            event.preventDefault();
+            if (!$('#team-section').hasClass('mobile')) {
+                $('#team-section').addClass('mobile');
+                closeburger();
+                $('header').removeClass('sticky-top');
+            }
+        }
+    )
+
+    $('.close-btn').click(function () {
+        $('header').addClass('sticky-top');
+        $('#team-section').removeClass('mobile');
+    })
+
+
+
+    ////Submit button///
+
+    $('#submitButton').click(function () {
+
+        if ($('#name').val() && $('#surname').val() && $('#email').val() && $('#file').val()) {
+            $('#applyform').submit();
+        } else {
+            $('input').addClass('empty');
+            $('.custom-file-upload').addClass('empty');
         }
     })
-})
-
-///
-
-///Team mobile click///
-$('.nav-mob').click(
-    function (event) {
-        event.preventDefault();
-        if(!$('#team-section').hasClass('mobile')){
-            $('#team-section').addClass('mobile');
-            closeburger();
-            $('header').removeClass('sticky-top');
-        }
-    }
-)
-
-$('.close-btn').click(function () {
-    $('header').addClass('sticky-top');
-    $('#team-section').removeClass('mobile');
-})
 
 });
 

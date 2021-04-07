@@ -75,6 +75,13 @@ input[type="file"] {
             padding: 0;
         }
 
+
+        .row{
+            border-bottom: $bottom-border;
+            padding: 0 0 56px 0;
+        }
+
+
         .ltinput{
             height: 64px;
             border: 1px solid rgba(255, 255, 255, 0.5);
@@ -88,6 +95,13 @@ input[type="file"] {
             padding: 0 16px;
             flex: 0 0 25%;
             max-width: 25%;
+            &:focus{
+                border: 1px solid rgba(255, 255, 255, 1);
+            }
+
+            &.empty{
+                border: 1px solid rgb(163, 45, 45); 
+            }
         }
 
         .custom-file-upload, .more-btn{
@@ -111,6 +125,9 @@ input[type="file"] {
     align-items: center;
     justify-content: center;
     margin: 0;
+    &.empty{
+        border: 1px solid rgb(163, 45, 45); 
+    }
     span{
         position: relative;
         &::before{
@@ -121,35 +138,49 @@ input[type="file"] {
         }
     }
 }
-
+.vacancy-icon-row{
+padding-top: 72px;
+}
 
 
 @media only screen and (max-width: 1025px) {
     .vacancyform{
-        .row{
-            border-bottom: $bottom-border;
-            padding-bottom: 20px !important;
-        }
+        
         .first, .second{
             margin-bottom: 24px;
         }
        
     }
 
-
 }
 
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 768px) {
     .vacancyform{
         .row{
             border-bottom: $bottom-border;
             padding-bottom: 20px !important;
         }
-        .first, .second{
+        .first{
             margin-bottom: 24px;
+            display: flex;
+            flex-direction: column;
         }
+    }
+
+    .form-section .vacancyform .ltinput {
+        h2{
+            font-size: 24px;
+            padding-bottom: 0;
+        }
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+        margin: 24px 0px;
+        padding: 20px 0px 16px 20px;
     }
 
 
 }
+
+

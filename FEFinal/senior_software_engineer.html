@@ -34,7 +34,8 @@
         <div class="my-container">
             <div class="info">
                 <h3 class="list-title">Skills & Requirements:</h3>
-                <ul class="information-list">
+                <div class="information-list">
+                <ul>
                     <li>Core knowledge in Computer Science</li>
                     <li>Deep knowledge of C# development from high-level architecture to low-level optimizations (Java
                         and C++ would also suffice)</li>
@@ -56,34 +57,39 @@
                     <li>Adaptable communication skills, ability to talk to developers, platform, support, business and
                         PMs
                     </li>
-                </ul>
+                    </ul>
+                </div>
             </div>
 
             <div class="info">
                 <h3 class="list-title">Skills & Requirements:</h3>
-                <ul class="information-list">
-                    <li>Core knowledge in Computer Science</li>
-                    <li>Deep knowledge of C# development from high-level architecture to low-level optimizations (Java
-                        and C++ would also suffice)</li>
-                    <li>Experience producing application prototypes</li>
-                    <li>Development and Basic Optimizations in RDBMS (SQL Server, Oracle, MySQL, PostgreSQL)</li>
-                    <li>OOP and Test Driven Development</li>
-                    <li>Experience in Multithreading/Multitasking</li>
-                    <li>Network Basics and Network Programming</li>
-                    <li>Hardware Basics</li>
-                    <li>Software Optimization and Scalability</li>
-                    <li>Experience of working in aggressive scheduled timelines</li>
-                    <li>Understanding of shipping software in a team, including code reviews, documentation, and
-                        ensuring code testability</li>
-                    <li>Ability to work effectively both individually and on a team</li>
-                    <li>Excellent troubleshooting and debugging skills</li>
-                    <li>Strong design and problem-solving skills, requirements gathering and analysis</li>
-                    <li>Experience in software architecture designing</li>
-                    <li>Having sense of ownership and desire to fix problems you didn't cause</li>
-                    <li>Adaptable communication skills, ability to talk to developers, platform, support, business and
-                        PMs
-                    </li>
-                </ul>
+                <div class="information-list">
+                    <ul>
+                        <li>Core knowledge in Computer Science</li>
+                        <li>Deep knowledge of C# development from high-level architecture to low-level optimizations
+                            (Java
+                            and C++ would also suffice)</li>
+                        <li>Experience producing application prototypes</li>
+                        <li>Development and Basic Optimizations in RDBMS (SQL Server, Oracle, MySQL, PostgreSQL)</li>
+                        <li>OOP and Test Driven Development</li>
+                        <li>Experience in Multithreading/Multitasking</li>
+                        <li>Network Basics and Network Programming</li>
+                        <li>Hardware Basics</li>
+                        <li>Software Optimization and Scalability</li>
+                        <li>Experience of working in aggressive scheduled timelines</li>
+                        <li>Understanding of shipping software in a team, including code reviews, documentation, and
+                            ensuring code testability</li>
+                        <li>Ability to work effectively both individually and on a team</li>
+                        <li>Excellent troubleshooting and debugging skills</li>
+                        <li>Strong design and problem-solving skills, requirements gathering and analysis</li>
+                        <li>Experience in software architecture designing</li>
+                        <li>Having sense of ownership and desire to fix problems you didn't cause</li>
+                        <li>Adaptable communication skills, ability to talk to developers, platform, support, business
+                            and
+                            PMs
+                        </li>
+                    </ul>
+                </div>
             </div>
 
 
@@ -94,26 +100,43 @@
             <h2>Apply for this position</h2>
 
             <form class="vacancyform" method="POST" id="applyform">
-                <div class="row m-0 p-0">
+                <div class="row m-0">
                     <div class="col-12 col-lg-6 first">
-                        <input type="text" name="name" class="ltinput" placeholder="Name">
-                        <input type="text" name="surname" class="ltinput" placeholder="Surname">
-                        <input type="email" name="email" class="ltinput" placeholder="E-mail">
+                        <input type="text" name="name" class="ltinput" id="name" placeholder="Name">
+                        <input type="text" name="surname" class="ltinput" id="surname" placeholder="Surname">
+                        <input type="email" name="email" class="ltinput" id="email" placeholder="E-mail">
                     </div>
                     <div class="col-12 col-lg-5 second">
                         <label class="custom-file-upload">
-                            <input name="file" type="file" ccept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
-                            <span> Upload your CV</span>  
+                            <input name="file" type="file" id="file"
+                                accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                            <span> Upload your CV</span>
                         </label>
                         <div class="more-btn" id="submitButton">Apply</div>
                     </div>
                 </div>
-               
-
 
             </form>
 
+            <div class="row m-0 icons-row vacancy-icon-row">
+                <div class="col-4">
+                    <img src="./assets/images/icons/advantage_icon_1.svg" alt="icon">
+                    <h3>Growth And Development</h3>
+                </div>
+                <div class="col-4">
+                    <img src="./assets/images/icons/advantage_icon_2.svg" alt="icon">
+                    <h3>Smart And Motivated Team</h3>
+                </div>
+                <div class="col-4">
+                    <img src="./assets/images/icons/advantage_icon_3.svg" alt="icon">
+                    <h3>Care About Values</h3>
+                </div>
+            </div>
+
         </div>
+
+
+
     </div>
     <footer class="copyright">
         <div class="container-xl">
