@@ -1,0 +1,58 @@
+///Team///
+#team-section.mobile{
+  z-index: 6;
+  display: block !important;
+  width: 100% !important;
+  height: 100vh !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  //overflow: visible !important;
+  overflow-y: auto;
+  background-color: $color-light-bg;
+  
+ 
+  }
+
+  @media (min-width: 240px) and (max-width: 479px) {
+    #team-section.mobile{
+      .team-member {
+        width: 100%;
+        height: auto;
+        .img-div{
+          height: 80%;
+        }
+        img{
+          height: auto;
+          width: 100%;
+        }
+      }
+
+    }
+
+  }
+  
+  @media (min-width: 480px) and (max-width: 767px){
+  
+
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+#team-section{
+  .team-member{
+    margin: 0 2px 40px;
+    width: calc(23% - 30px);
+    text-align: center;
+    .img-div{
+      height: 210px;
+    }
+  }
+}
+  }
+
+
+  @media only screen and (min-width: 1025px) {
+.close-btn{
+  display:none;
+}
+  }

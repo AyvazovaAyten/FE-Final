@@ -44,7 +44,7 @@
         <div class="nav-links d-flex flex-column">
             <a class="nav-mobile-link" data-link="#what-we-do">What we do</a>
             <a class="nav-mobile-link" data-link="#who-we-are">Who we are</a>
-            <a class="nav-mobile-link" data-link="#team-section">Executive team</a>
+            <a class="nav-mob" data-link="#team-section">Executive team</a>
             <a class="nav-mobile-link" data-link="#jobs">Jobs</a>
             <a class="nav-mobile-link" data-link="#news">News</a>
             <a class="nav-mobile-link" data-link="#contacts">Contacts</a>
@@ -59,7 +59,7 @@
                         growing with new
                         launches every quarter.</p>
                 </div>
-                <a class="scroll-btn position-absolute d-flex align-items-center p-0" href="#second-section">
+                <a class="scroll-btn position-absolute d-flex align-items-center p-0" href="#what-we-do">
                     <img src="./assets/images/mouse_icon.svg" alt="mouse">
                     <span class="ml-3 mt-2">Scroll to discover us!</span>
                 </a>
@@ -73,9 +73,9 @@
                 <div class="text-sct m-0 p-0">
                     <h2 class="section-title">What we do</h2>
                 </div>
-                <div class="more-btn">
+                <a class="more-btn">
                     <span>Read more</span>
-                </div>
+                </a>
             </div>
             <div class="row flex-column flex-md-row justify-content-between w-100 m-0 p-0">
                 <div class="card my-card" data-article="./whatwedo.html#card1">
@@ -112,7 +112,7 @@
     </section>
 
     <section class="solutions-section w-100 d-flex align-items-center justify-content-between">
-        <div class="row align-items-center justify-content-center h-100 w-100 m-0">
+        <div class="row align-items-center justify-content-center h-100 w-100 m-0 solutions-row">
             <div class="col-12 col-md-6 d-flex justify-content-center p-0 m-0">
                 <h3>Tech-Powered Financial Solutions</h3>
             </div>
@@ -206,6 +206,7 @@
             </div>
         </div>
     </section>
+    <!-- Map Section -->
     <section class="map-section w-100 d-flex align-items-center justify-content-center">
         <div class="container-lg h-100 position-relative">
             <div class="map-img w-100 h-100">
@@ -2703,7 +2704,6 @@
                     <p class="both circle">Both</p>
                 </div>
             </div>
-
         </div>
     </section>
     <section class="clients-section w-100">
@@ -2737,166 +2737,173 @@
             </div>
         </div>
     </section>
-    <section class="team-section w-100 ">
-        <div class="container">
-            <h2 class="section-title">Executive team</h2>
-            <div class="row w-100 justify-content-center m-0">
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/seymur_mammadov-1.png" alt="Team Member">
+        <section class="team-section w-100" id="team-section">
+            <div class="container">
+                <div class="row justify-content-between align-items-center m-0 p-0">
+                    <h2 class="section-title">Executive team</h2>
+                    <div class="close-btn">
+                            <span class="x-line"></span>
+                            <span class="x-line"></span>
                     </div>
-                    <div class="text-div w-100">
-                        <p class="name">Seymur Mammadov</p>
-                        <p class="job-position">Chief Executive Officer</p>
+                    
+                </div>
+                <div class="row w-100 justify-content-center m-0 first">
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/seymur_mammadov-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Seymur Mammadov</p>
+                            <p class="job-position">Chief Executive Officer</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/ramiz_lyapin-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Ramiz Lyapin</p>
+                            <p class="job-position">Advisor to the Chief Executive Officer</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/tamerlan-gamidzadeh-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Tamerlan Gamidzadeh</p>
+                            <p class="job-position">Financial Advisor to the Chief Executive Officer</p>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/ramiz_lyapin-1.png" alt="Team Member">
+                <div class="row justify-content-between m-0 second">
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/shamsiyya_ismayilova-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Shamsiya Ismayilova</p>
+                            <p class="job-position">Chief HR & Administrative Officer</p>
+                        </div>
                     </div>
-                    <div class="text-div w-100">
-                        <p class="name">Ramiz Lyapin</p>
-                        <p class="job-position">Advisor to the Chief Executive Officer</p>
+    
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/ali_akbar_mammadov-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Ali Akbar Mammadov</p>
+                            <p class="job-position">Chief Commercial Officer</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/elman-talybov-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Elman Talybov</p>
+                            <p class="job-position">Chief Strategy Officer</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/rauf_ismayilov-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Rauf Ismayilov</p>
+                            <p class="job-position">Chief Technology Officer</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/anar-aliyev-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Anar Aliyev</p>
+                            <p class="job-position">Chief Data Science & Analytics Officer</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/farhad-huseynov-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Farhad Huseynov</p>
+                            <p class="job-position">Chief Financial Officer</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/natiq_alasgarzade-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Natiq Alasgarzade</p>
+                            <p class="job-position">Project Management Office Director</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/bendeguz_seres-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Bendeguz Seres</p>
+                            <p class="job-position">Sales & Accounts Head</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/eldar_novruzov-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Eldar Novruzov</p>
+                            <p class="job-position">Regional Sales & Accounts Management Director</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/elnur_rzazade-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Elnur Rzazade</p>
+                            <p class="job-position">Regional Sales & Accounts Management Director</p>
+                        </div>
                     </div>
                 </div>
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/tamerlan-gamidzadeh-1.png" alt="Team Member">
+    
+                <div class="row w-100 justify-content-center m-0 third">
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/selbin-alakbarova-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Selbin Alakbarova</p>
+                            <p class="job-position">Chief Product Officer FinTech</p>
+                        </div>
                     </div>
-                    <div class="text-div w-100">
-                        <p class="name">Tamerlan Gamidzadeh</p>
-                        <p class="job-position">Financial Advisor to the Chief Executive Officer</p>
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/fuad-musayev-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Fuad Musayev</p>
+                            <p class="job-position">Global Development Lead FinTech</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="img-div w-100">
+                            <img src="./assets/images/team/murad-jalilzadeh-1.png" alt="Team Member">
+                        </div>
+                        <div class="text-div w-100">
+                            <p class="name">Murad Jalilzadeh</p>
+                            <p class="job-position">Senior Product Owner FinTech</p>
+                        </div>
                     </div>
                 </div>
+    
             </div>
-            <div class="row justify-content-between m-0">
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/shamsiyya_ismayilova-1.png" alt="Team Member">
-                    </div>
-                    <div class="text-div w-100">
-                        <p class="name">Shamsiya Ismayilova</p>
-                        <p class="job-position">Chief HR & Administrative Officer</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/ali_akbar_mammadov-1.png" alt="Team Member">
-                    </div>
-                    <div class="text-div w-100">
-                        <p class="name">Ali Akbar Mammadov</p>
-                        <p class="job-position">Chief Commercial Officer</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/elman-talybov-1.png" alt="Team Member">
-                    </div>
-                    <div class="text-div w-100">
-                        <p class="name">Elman Talybov</p>
-                        <p class="job-position">Chief Strategy Officer</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/rauf_ismayilov-1.png" alt="Team Member">
-                    </div>
-                    <div class="text-div w-100">
-                        <p class="name">Rauf Ismayilov</p>
-                        <p class="job-position">Chief Technology Officer</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/anar-aliyev-1.png" alt="Team Member">
-                    </div>
-                    <div class="text-div w-100">
-                        <p class="name">Anar Aliyev</p>
-                        <p class="job-position">Chief Data Science & Analytics Officer</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/farhad-huseynov-1.png" alt="Team Member">
-                    </div>
-                    <div class="text-div w-100">
-                        <p class="name">Farhad Huseynov</p>
-                        <p class="job-position">Chief Financial Officer</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/natiq_alasgarzade-1.png" alt="Team Member">
-                    </div>
-                    <div class="text-div w-100">
-                        <p class="name">Natiq Alasgarzade</p>
-                        <p class="job-position">Project Management Office Director</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/bendeguz_seres-1.png" alt="Team Member">
-                    </div>
-                    <div class="text-div w-100">
-                        <p class="name">Bendeguz Seres</p>
-                        <p class="job-position">Sales & Accounts Head</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/eldar_novruzov-1.png" alt="Team Member">
-                    </div>
-                    <div class="text-div w-100">
-                        <p class="name">Eldar Novruzov</p>
-                        <p class="job-position">Regional Sales & Accounts Management Director</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/elnur_rzazade-1.png" alt="Team Member">
-                    </div>
-                    <div class="text-div w-100">
-                        <p class="name">Elnur Rzazade</p>
-                        <p class="job-position">Regional Sales & Accounts Management Director</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row w-100 justify-content-center m-0">
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/selbin-alakbarova-1.png" alt="Team Member">
-                    </div>
-                    <div class="text-div w-100">
-                        <p class="name">Selbin Alakbarova</p>
-                        <p class="job-position">Chief Product Officer FinTech</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/fuad-musayev-1.png" alt="Team Member">
-                    </div>
-                    <div class="text-div w-100">
-                        <p class="name">Fuad Musayev</p>
-                        <p class="job-position">Global Development Lead FinTech</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="img-div w-100">
-                        <img src="./assets/images/team/murad-jalilzadeh-1.png" alt="Team Member">
-                    </div>
-                    <div class="text-div w-100">
-                        <p class="name">Murad Jalilzadeh</p>
-                        <p class="job-position">Senior Product Owner FinTech</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        </div>
-    </section>
+        </section>
+    </div>
+    
     <section class="jobs w-100" data-link="" id="jobs">
         <div class="container-xl">
             <h2 class="section-title">Work with us</h2>
@@ -2922,9 +2929,9 @@
                     <h3>Become part of our team</h3>
                     <p>We are looking for passionate and talented people to join our growing team. If you want to find
                         out your highest heart rate and fill up your life with passion, then welcome to Simbrella.</p>
-                    <div class="more-btn">
+                    <a class="more-btn">
                         <span>All vacancies</span>
-                    </div>
+                    </a>
                 </div>
 
             </div>
@@ -2937,9 +2944,9 @@
                     <h2 class="section-title">Latest News</h2>
                 </div>
                 <div class="col-6 btn-col">
-                    <div class="more-btn">
+                    <a class="more-btn">
                         <span>All News</span>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="row flex-column flex-md-row justify-content-between w-100 m-0">
@@ -2989,42 +2996,68 @@
                     <h2 class="section-title">Contacts</h2>
                 </div>
                 <div class="col-12 col-md-8">
-
-                    <div class="cities col-12 col-lg-4">
-                        <h3>AMSTERDAM</h3>
-                        <h3>BAKU</h3>
-                        <h3>SINGAPORE</h3>
-                    </div>
-                    <div class="more-btn col-4">
-                        <span>Our branches</span>
-                    </div>
-
-
-                    <div class="city amsterdam">
-                        <div class="city-info">
-                            <p>Headquarters</p>
-                            <h3>Teleportboulevard 130, Scalehub, Unit number 1.08, 1043 EJ Amsterdam, Netherlands</h3>
+                    <div class="row w-100 justify-content-between align-items-center">
+                        <div class="cities col-12 col-lg-8 p-lg-0">
+                            <h3 class="city-link active-link col-4" data-target="#amsterdam" >AMSTERDAM</h3>
+                            <h3 class="city-link col-4" data-target="#baku">BAKU</h3>
+                            <h3 class="city-link col-4" data-target="#singapore">SINGAPORE</h3>
                         </div>
-                        <div class="city-info">
-                            <p>E-mail</p>
-                            <a href="mailto:amsterdam@simbrella.com">amsterdam@simbrella.com</a>
-                        </div>
+                        <a class="more-btn col-lg-4">
+                            <span>Our branches</span>
+                        </a>
                     </div>
+                    <div class="city">
+                        <div class="current-city active-city" id="amsterdam">
+                            <div class="city-info">
+                                <p>Headquarters</p>
+                                <h3>Teleportboulevard 130, Scalehub, Unit number 1.08, 1043 EJ Amsterdam, Netherlands</h3>
+                            </div>
+                            <div class="city-info">
+                                <p>E-mail</p>
+                                <a href="mailto:amsterdam@simbrella.com">amsterdam@simbrella.com</a>
+                            </div>
+                        </div>
 
+                        <div class="current-city" id="baku">
+                            <div class="city-info">
+                                <p>Headquarters</p>
+                                <h3>Jalil Mammadguluzadeh st. 102 A, City Point Business Centre, AZ1022, Baku, Azerbaijan</h3>
+                            </div>
+                            <div class="city-info">
+                                <p>E-mail</p>
+                                <a href="mailto:baku@simbrella.com">baku@simbrella.com</a>
+                            </div>
+                            <div class="city-info">
+                               <p>Contact number</p>
+                                  <a href="tel:+994 12 404 31 32">+994 12 404 31 32</a>
+                            </div>
+                        </div>
+
+                        <div class="current-city" id="singapore">
+                            <div class="city-info">
+                                <p>APAC Region Office</p>
+                                <h3>163 Tras Street, #07-02, Lian Huat Building, 079024, Singapore</h3>
+                            </div>
+                            <div class="city-info">
+                                <p>E-mail</p>
+                                <a href="mailto:singapore@simbrella.com">singapore@simbrella.com</a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
         <footer class="copyright">
             <div class="container-xl">
                 <div class="row">
-                    <div class="siteby col-12 col-lg-4">
+                    <div class="siteby col-12 col-md-4">
                         <span>Site By</span>
                         <img src="./assets/images/jis_logo.svg" alt="logo">
                         <a href="https://www.jis.az/">Jeykhun Imanov Studio</a>
                     </div>
-                    
-                        <p class="rights col-12 col-lg-8">Copyright © 2021. All rights reserved.</p>
-                    
+                    <p class="rights col-12 col-md-8">Copyright © 2021. All rights reserved.</p>
+
                 </div>
             </div>
 

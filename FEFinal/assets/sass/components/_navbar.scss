@@ -3,7 +3,7 @@
     overflow: hidden;
 }
 header{
-    position: sticky !important;
+    z-index: 20;
     transition: .2s linear;
     &.scrolled-nav{
         box-shadow: 0 0 10px 0 rgba(41, 41, 41, 0.1) !important;

@@ -184,6 +184,41 @@ $('.my-card').each(function(){
 })
 ///
 
+///City slider
+$('.city-link').each(function(){
+    $(this).click(function(){
+        if(!$(this).hasClass('active-link')){
+
+            $('.active-link').removeClass('active-link');
+            $(this).addClass('active-link');
+
+            let city = $(this).attr('data-target');
+            $('.active-city').removeClass('active-city');
+            $(`${city}`).addClass('active-city');
+            
+        }
+    })
+})
+
+///
+
+///Team mobile click///
+$('.nav-mob').click(
+    function (event) {
+        event.preventDefault();
+        if(!$('#team-section').hasClass('mobile')){
+            $('#team-section').addClass('mobile');
+            closeburger();
+            $('header').removeClass('sticky-top');
+        }
+    }
+)
+
+$('.close-btn').click(function () {
+    $('header').addClass('sticky-top');
+    $('#team-section').removeClass('mobile');
+})
+
 });
 
 

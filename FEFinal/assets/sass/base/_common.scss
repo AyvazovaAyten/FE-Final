@@ -12,11 +12,21 @@ html {
   scroll-padding-top: $nav-height;
 }
 header{
+  z-index: 100 !important;
     height: 110px !important;
     img{
       width: 154px !important;
     }
 }
+
+.my-container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
  .what-we-do, .who-we-are, .jobs, .news, .contacts, .solutions-section, .map-section, .clients-section, .team-section, .contacts{
     min-height: calc(100vh - #{$nav-height}) !important;
     overflow: hidden;
@@ -32,28 +42,11 @@ header{
       color:$color-bg;
   }
   
-  .intro, #what-we-do, .clients-section, #jobs, #news{
-
-    h1, h2, h3, p, .card{
-      opacity: 0;
-    }
-    &.animate{
-      h1, h2, h3, p, .card{
-        opacity: 0;
-        transform: translateY(32px);
-        transition: all .4s linear;
-        animation-name: sectionAnimation;
-        animation-delay: .1s;
-        animation-duration: .7s;
-        animation-fill-mode: forwards;
-      }
-    }
-
-  }
-
   .copyright{
+    background-color: black;
     color: white;
     display: flex;
+    padding: 20px 0;
     .siteby{
       font-size: 12px;
     }

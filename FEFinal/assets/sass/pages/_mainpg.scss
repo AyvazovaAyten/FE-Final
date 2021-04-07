@@ -106,6 +106,7 @@ p{
   }
 
 }
+////Map-section///
 
 #map-section{
   min-height: 1px !important;
@@ -136,23 +137,68 @@ p{
     width: 220px;
     margin-bottom:40px;;
     display: none;
+   p{
+     padding-left: 30px;
+     position: relative;
+     &:last-child{
+       margin: 0;
+     }
+
+     &.orange::before{
+       background: $color-secondary;
+     }
+     &.orange::after{
+      background: $color-secondary;
+    }
+     &.blue::before{
+      background: $color-bg;
+    }
+    &.blue::after{
+      background: $color-bg;
+    }
+    &.both::before{
+      background: url("../images/icons/both_icon.svg");
+      opacity: 1;
+    }
+     &::after, &::before{
+      content: "";
+      position: absolute;
+      border-radius: 50%;  
+     }
+     &::before{
+       width: 20px;
+       height: 20px;
+       top: 0;
+       left: 0;
+       opacity: .3;
+     }
+     &::after{
+      width: 6px;
+      height: 6px;
+      top: calc(50% - 3px);
+      left: 7px;
+    }
+
+   }
+
   }
   
 }
 
 .section-body{
-  z-index: -1;
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
+  pointer-events: none;
   .section-title{
     margin-top: 0px;
     text-align: center;
   }
 }
 
+///////////////////////////////////
 .clients-section{
   background-color: $color-light-bg;
 }
@@ -204,6 +250,9 @@ p{
     .more-btn{
       max-width: 220px;
       padding: 20px 0;
+      span{
+        color: $color-primary;
+      }
     }
   }
   
@@ -232,9 +281,13 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 0px;
   .more-btn{
     min-width: 200px;
     max-width: 200px;
+    span{
+      color: $color-primary;
+    }
   }
   .section-title{
     padding: 0;
@@ -251,14 +304,15 @@ p{
       color: rgba(255, 255, 255, 0.5);
       transition: all .2s linear;
       cursor: pointer;
-      padding: 0 48px !important;
-      &:first-child{
-        padding: 0 48px 0 0 !important;
-        border-left:none ;
+      &.col-4{
+        text-align: center;
+        &:first-child{
+          text-align: left;
+          border-left:none ;
+        }
       }
       padding: 0;
       border-left: 1px solid #505050;
-
       &:hover, &.active-link{
         color: $color-secondary;
       }
@@ -270,8 +324,14 @@ p{
       padding: 0 15px;
     }
   }
+  .current-city{
+    position: absolute;
+    display: none;
+  }
   .city-info{
     padding: 46px 0 48px;
+    top: 0;
+    left: 0;
     p{
       color: rgba(255, 255, 255, 0.6);
       font-size: 18px;
@@ -280,6 +340,20 @@ p{
   }
   .section-title{
     color: $color-primary;
+  }
+.city{
+  position: relative;
+  min-height: 320px;
+}
+  .current-city{
+    
+    &.active-city{
+      display: block;
+    }
+  }
+
+  .copyright{
+    background: transparent;
   }
 
 }

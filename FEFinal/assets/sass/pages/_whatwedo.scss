@@ -1,7 +1,4 @@
 @import "../base/variables";
-body, html {
-  height: 100%;
-}
 .intro-bg{
     height: auto;
     padding: 48px 0;
@@ -59,36 +56,6 @@ body, html {
     }
     
   }
-  .information-list{
-    display: flex;
-    align-items: center;
-    padding-top: 30px;
-  }
-  ul{
-    padding-left: 0;
-    margin-left: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 80%;
-  }
-
-  li{
-    font-size: 20px;
-    position: relative;
-    padding-bottom: 32px;
-    &::before{
-      content: '';
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: $color-secondary;
-      position: absolute;
-      top: 8px;
-      left:-18px;
-    }
-  }
 }
 
 .fixed-image{
@@ -106,6 +73,38 @@ body, html {
     background-size: cover !important;
     width: 100%;
 }
+
+.information-list{
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+ul{
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+}
+
+li{
+  font-size: 20px;
+  position: relative;
+  padding-bottom: 32px;
+  &::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $color-secondary;
+    position: absolute;
+    top: 8px;
+    left:-18px;
+  }
+}
+
 .page-footer{
   background-color:black;
 }

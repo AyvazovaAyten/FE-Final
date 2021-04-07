@@ -1,7 +1,8 @@
 @import "../base/variables";
 .vacancies-intro{
+    padding-top: 110px;
     img{
-        width: 460px;
+        width: 100%
     }
     h1{
         padding: 0 0 32px;
@@ -18,7 +19,6 @@
     }
 }
 .vc-header{
-    
         #logo{
             background-image: url('../images/logo_colored.svg') !important;
          }
@@ -27,4 +27,35 @@
 .all-vacancies{
     background-color:$color-light-bg;
     padding: 100px 0;
+
+    .row{
+        justify-content: space-between;
+    }
+}
+.vacancy{
+    background: $color-primary;
+    display: flex;
+    height: 120px;
+    border: 1px solid $color-secondary;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    padding: 24px;
+    box-sizing: content-box;
+    transition: .4s;
+    cursor: pointer;
+    position: relative;
+
+    &:hover{
+        background-color: $color-secondary;
+        color: $color-primary;
+    }
+    a{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 }

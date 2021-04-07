@@ -8,6 +8,7 @@
 
 .more-btn{
     width: 200px;
+    max-width: 200px;
     height: 56px;
     border: 3px solid $color-border;
     border-radius: 12px;
@@ -24,18 +25,12 @@
         transition: .2s;
     }
 span{
+    color: black;
     font-size: 15px;
     font-weight: 600;
     padding-left: 24px;
     position: relative;
 
-    // &::after{
-    //     content: url(../images/link_orange_icon.svg);
-    //     position: absolute;
-    //     top: 0;
-    //     right: -72px;
-    //     transition: .2s;
-    // }
 }
 &:hover{
     border-color: $color-secondary;
@@ -43,4 +38,25 @@ span{
         right: 18px;
     }
 }
+}
+.close-btn{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 26px;
+    .x-line{
+        position: absolute;
+        width: 26px;
+        height: 2px;
+        border-radius: 2px;
+        background: $color-bg;
+        transition: all .3s linear;
+        transform: rotate(45deg);
+        &:last-child{
+            transform: rotate(-45deg);
+        }
+    }
 }

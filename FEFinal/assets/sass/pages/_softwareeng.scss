@@ -1,0 +1,155 @@
+.vacancy-intro{
+    height: 300px;
+    padding: 0 0 70px;
+    background-position: 0 50%;
+    background: #0C0D26 url("../images/sectionBG/vacancies_header_bg.svg") no-repeat;
+    background-size: cover;
+    margin-top: -110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    h1{
+        font-size: 36px;
+        color: $color-primary;
+    }
+    
+}
+.skills{
+    padding: 20px 0 90px;
+    background: $color-light-bg;
+    .list-title{
+        font-size: 32px;
+    }
+
+    .info{
+        padding-top: 40px;
+        border-bottom: 1px solid #E7E7E7;
+        &:last-child{
+            border: none;
+        }
+    }
+.information-list{
+    align-items: flex-start;
+    padding-bottom: 20px;
+    
+    
+    li{
+        font-size: 18px;
+        padding-bottom: 28px;
+        margin-left: 20px;
+    }
+    
+}
+
+}
+input[type="file"] {
+    display: none;
+}
+.form-section{
+
+    .row{
+        justify-content: space-between;
+
+        .more-btn{
+            max-width: 100%;
+            height: 64px;
+            padding: 0 36px;
+        }
+    }
+    
+    background: $color-bg;
+    color: $color-primary;
+    padding: 120px 0;
+    h2{
+        font-size: 36px;
+        font-weight: 500;
+        padding: 0 0 70px;
+    }
+
+    .vacancyform{
+        width: 100%;
+        .col-lg-6, .col-lg-5{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+        }
+
+        .ltinput{
+            height: 64px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 12px;
+            color: $color-primary;
+            background: none;
+            font-size: 16px;
+            font-weight: 300;
+            outline: 0;
+            box-sizing: content-box;
+            padding: 0 16px;
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+
+        .custom-file-upload, .more-btn{
+            flex: 0 0 48%;
+            max-width: 48%;
+        }
+
+    }
+}
+.custom-file-upload {
+    border: 1px dashed rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    color: $color-primary;
+    background: none;
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    cursor: pointer;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    span{
+        position: relative;
+        &::before{
+            content: url("../images/icons/file_white_icon.svg");
+            height: 32px;
+            top:0;
+            left: 18px
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 1025px) {
+    .vacancyform{
+        .row{
+            border-bottom: $bottom-border;
+            padding-bottom: 20px !important;
+        }
+        .first, .second{
+            margin-bottom: 24px;
+        }
+       
+    }
+
+
+}
+
+
+@media only screen and (max-width: 1025px) {
+    .vacancyform{
+        .row{
+            border-bottom: $bottom-border;
+            padding-bottom: 20px !important;
+        }
+        .first, .second{
+            margin-bottom: 24px;
+        }
+    }
+
+
+}

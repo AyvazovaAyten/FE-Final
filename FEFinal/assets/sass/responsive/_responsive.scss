@@ -88,6 +88,7 @@
         }
       }
     }
+
     .news{
       .news-card{
         width: 100%;
@@ -161,6 +162,45 @@
     }
 
     /////////////////////
+
+
+    /////Vacancies Page////
+    .all-vacancies{
+      .vacancy{
+        padding: 0px;
+        height: 90px;
+        font-size: 18px;
+        box-sizing: border-box;
+      }
+    }
+
+    ///////
+
+    /// Software Engineer Page /////
+    .skills{
+      padding: 0;
+      .list-title{
+          font-size: 21px;
+      }
+  
+      .info{
+          padding-top: 40px;  
+      }
+      .info{
+        padding-top: 52px;
+      }
+  .information-list{  
+      padding-bottom: 20px; 
+      padding-top: 20px; 
+      li{
+          font-size: 16px;
+          padding-bottom: 21px;
+          margin-left: 18px;
+      }
+      
+  }
+  
+  }
     
 }
 
@@ -293,6 +333,44 @@
 
 
     /////////////////////
+
+
+
+/////Vacancies Page////
+.all-vacancies{
+  .vacancy{
+    padding: 0px;
+    height: 100px;
+    font-size: 20px;
+    box-sizing: border-box;
+  }
+}
+
+///////
+
+
+
+/// Software Engineer Page /////
+    .skills{
+      padding: 0;
+      .list-title{
+          font-size: 24px;
+      }
+  
+      .info{
+          padding-top: 40px;  
+      }
+  .information-list{  
+      padding-bottom: 20px;  
+      li{
+          font-size: 16px;
+          padding-bottom: 21px;
+          margin-left: 18px;
+      }
+      
+  }
+  
+  }
 
 }
 
@@ -468,6 +546,14 @@
 }
 
 /////////////////////
+.contacts{
+  .city-info{
+    padding: 0 0 30px;
+    &:first-child{
+      padding-top: 64px;
+    }
+  } 
+}
 
 }
 
@@ -557,7 +643,14 @@
     }
     
     /////////////////////
-        
+    .contacts{
+      .city-info{
+        padding: 0 0 30px;
+        &:first-child{
+          padding-top: 42px;
+        }
+      } 
+    }
 
 }
 
